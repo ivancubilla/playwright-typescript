@@ -24,3 +24,8 @@ export const loginData = {
     password: ''
   }
 };
+
+/*feature/login-tests
+feature/dropdown-tests
+feature/checkbox-tests
+feature/github-actions*/
