@@ -1,0 +1,26 @@
+[
+  {
+    "testName": "valid login",
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!",
+    "expected": "success"
+  },
+  {
+    "testName": "invalid password",
+    "username": "tomsmith",
+    "password": "wrongPassword",
+    "expected": "error"
+  },
+  {
+    "testName": "empty password",
+    "username": "tomsmith",
+    "password": "",
+    "expected": "error"
+  },
+  {
+    "testName": "empty fields",
+    "username": "",
+    "password": "",
+    "expected": "error"
+  }
+]
