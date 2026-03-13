@@ -1,8 +1,8 @@
 
-import { Page } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 
 export class HomePage{
-
+    // Define the page property to hold the Playwright Page object
     readonly page: Page;
 
     constructor(page: Page) {
@@ -10,6 +10,7 @@ export class HomePage{
 }
 
 async gotoHomePage(){
+    // Navigate to the home page
     await this.page.goto('/');
 }
 
@@ -19,7 +20,12 @@ async gotoLoginPage() {
   }
 
   async gotoDropdown() {
-    await this.page.locator('a[href="/dropdown"]').click();
+    // click on the Dropdown link
+    await this.page.getByRole('link', { name: 'Dropdown' }).click();
   }
 
+  async gotoCheckboxes() {
+    // click on the Checkboxes link
+    await this.page.getByRole('link', { name: 'Checkboxes' }).click();
+  }
 }
