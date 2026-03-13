@@ -27,7 +27,7 @@ export default defineConfig({
   ['list']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'https://the-internet.herokuapp.com/login',
+    baseURL: 'https://the-internet.herokuapp.com',
     screenshot: 'only-on-failure',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
