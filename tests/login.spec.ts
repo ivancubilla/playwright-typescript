@@ -23,7 +23,7 @@ test.describe('Login Tests', () => {
 
       await loginPage.login(data.username, data.password);
 
-      // Validate the login result based on the expected outcome
+      // Validate the login result based on the expected 
       if (data.expected === 'success') {
         await expect(loginPage.message).toContainText('logged');
       } else {
@@ -31,10 +31,5 @@ test.describe('Login Tests', () => {
       }
 
     });
-
   }
-
 });
-/*
-feature/checkbox-tests
-feature/github-actions*/

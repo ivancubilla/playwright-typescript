@@ -13,15 +13,13 @@ test.describe('Checkboxes tests', () => {
     });
 
     test('should check checkbox1', async () => {
-
-        await checkboxPage.checkbox1.check();
+        checkboxPage.checkCheckbox1();
         await expect(checkboxPage.checkbox1).toBeChecked();
 
   });
 
     test('should uncheck checkbox2', async () => {
-
-        await checkboxPage.checkbox2.uncheck();
+        checkboxPage.unCheckCheckbox2();
         await expect(checkboxPage.checkbox2).not.toBeChecked();
 
   });
