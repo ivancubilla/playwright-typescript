@@ -10,7 +10,7 @@ Automation testing framework built with Playwright and TypeScript.
 
 ##  Steps to Run tests
 
-clone repository
-npm install
-npx playwright install
-npx playwright test
+- clone repository
+- npm install
+- npx playwright install
+- npx playwright test
