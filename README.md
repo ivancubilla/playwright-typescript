@@ -8,9 +8,10 @@ Automation testing framework built with Playwright and TypeScript.
 - Test Data Management
 - Playwright HTML Reports
 
-##  Steps to Run tests
+## Steps to Run tests
 
-- clone repository
-- npm install
-- npx playwright install
-- npx playwright test
+1. Clone the repository
+2. Install dependencies and Playwright browsers:
+   ```bash
+   npm install
+   npx playwright install
